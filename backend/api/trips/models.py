@@ -1,4 +1,6 @@
 from django.db import models
+from .locations.models import Location
+from .locations.images.models import Image
 
 class Trip(models.Model):
     name = models.CharField(max_length=100)
